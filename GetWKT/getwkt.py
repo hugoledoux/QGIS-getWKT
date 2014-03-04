@@ -76,6 +76,9 @@ class GetWKT:
         if layer is None:
             QMessageBox.warning(mw, "getWKT", "No selected layer")
             return 1
+        if (layer.type() != 0):
+            QMessageBox.warning(mw, "getWKT", "Layer selected is not vector")
+            return 1
         if layer.selectedFeatureCount() == 0:
             QMessageBox.warning(mw, "getWKT", "No feature selected")
             return 1

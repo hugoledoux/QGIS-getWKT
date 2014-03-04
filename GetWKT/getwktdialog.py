@@ -34,7 +34,9 @@ class GetWKTDialog(QtGui.QDialog, Ui_GetWKT):
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
-        mc = iface.mapCanvas()
-        f = mc.currentLayer().selectedFeatures()
-        # wkt = f.geometry().exportToWkt()
-        self.wktTextEdit.setText("%s" % f[0].geometry().exportToWkt())
+        self.mc = iface.mapCanvas()
+
+    def show(self):
+        if (self.mc.currentLayer() != None):
+          f = self.mc.currentLayer().selectedFeatures()
+          self.wktTextEdit.setText("%s" % f[0].geometry().exportToWkt())
