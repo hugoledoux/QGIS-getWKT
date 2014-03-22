@@ -24,11 +24,11 @@ email=h.ledoux@tudelft.nl
 # changelog=
 
 # tags are comma separated with spaces allowed
-tags=
+tags=wkt
 
 homepage=https://github.com/hugoledoux/QGIS-getWKT
-tracker=
-repository=
+tracker=https://github.com/hugoledoux/QGIS-getWKT/issues
+repository=https://github.com/hugoledoux/QGIS-getWKT
 icon=icon.png
 # experimental flag
 experimental=False
