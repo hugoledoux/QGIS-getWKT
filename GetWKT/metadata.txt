@@ -11,8 +11,8 @@
 [general]
 name=getWKT
 qgisMinimumVersion=2.0
-description=click on a geometry and see its WKT. That's it.
-version=0.1
+description=Click on a geometry and see its WKT. That's it.
+version=0.2
 author=Hugo Ledoux
 email=h.ledoux@tudelft.nl
 

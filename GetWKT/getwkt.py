@@ -88,10 +88,7 @@ class GetWKT:
         # show the dialog if things are properly selected
         self.dlg.show()
         result = self.dlg.exec_()
-        # f = layer.selectedFeatures()[0]
-        # wkt = f.geometry().exportToWkt()
-        # self.dlg.wktTextEdit.setPlainText(wkt)
-        # if result == 1:
+
 
 
 
