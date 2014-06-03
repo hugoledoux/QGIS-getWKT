@@ -55,17 +55,17 @@ class GetWKT:
         # Create action that will start plugin configuration
         self.action = QAction(
             QIcon(":/plugins/getwkt/icon.png"),
-            u"getWKT", self.iface.mainWindow())
+            u"getWKT", self.iface.vectorMenu())
         # connect the action to the run method
         self.action.triggered.connect(self.run)
 
         # Add toolbar button and menu item
         self.iface.addToolBarIcon(self.action)
-        self.iface.addPluginToMenu(u"&getWKT", self.action)
+        self.iface.addPluginToVectorMenu(u"&getWKT", self.action)
 
     def unload(self):
         # Remove the plugin menu item and icon
-        self.iface.removePluginMenu(u"&getWKT", self.action)
+        self.iface.removePluginVectorMenu(u"&getWKT", self.action)
         self.iface.removeToolBarIcon(self.action)
 
     # run method that performs all the real work
