@@ -2,8 +2,8 @@
 
 # Form implementation generated from reading ui file 'ui_getwkt.ui'
 #
-# Created: Sat Mar 22 10:32:22 2014
-#      by: PyQt4 UI code generator 4.10.3
+# Created: Tue Jun  3 08:47:47 2014
+#      by: PyQt4 UI code generator 4.10.4
 #
 # WARNING! All changes made in this file will be lost!
 
